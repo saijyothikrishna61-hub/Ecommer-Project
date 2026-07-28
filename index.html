@@ -1,32 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website - Home</title>
-    </head>
-    <body>
-        <header>
-            <h1>Welcome to My Website</h1>
-            <p>This is a simple paragraph.</p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Footwear | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Luma Footwear home">Luma<span>Footwear</span></a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="is-active" href="index.html" aria-current="page">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">View Products</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-        </nav>
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="eyebrow">Everyday formal footwear</p>
+                <h1 id="hero-title">A sharper step starts here.</h1>
+                <p class="hero__text">Comfortable, considered shoes for the moments that deserve a little more confidence.</p>
+                <div class="action-row">
+                    <a class="button button--coral" href="products.html">Shop the collection</a>
+                    <a class="text-link" href="about.html">Our story</a>
+                </div>
+            </div>
+        </section>
 
-        <main>
-            <section>
-                <h2>Search for products and buy here</h2>
-                <p>This web page contains products for sale.</p>
-            </section>
-            
-            <section>
-                <p>This is an e-commerce website created for selling products online.</p>
-            </section>
-        </main>
-    </body>
+        <section class="value-band" aria-label="Why choose Luma">
+            <div class="section-heading">
+                <p class="eyebrow">The Luma standard</p>
+                <h2>Made for the way your day moves.</h2>
+            </div>
+            <div class="value-grid">
+                <article class="value-item">
+                    <h3>Clean design</h3>
+                    <p>Classic forms with the small details that make an outfit feel finished.</p>
+                </article>
+                <article class="value-item">
+                    <h3>All-day comfort</h3>
+                    <p>Balanced support and a flexible fit, from the first meeting to the last plan.</p>
+                </article>
+                <article class="value-item">
+                    <h3>Thoughtful choice</h3>
+                    <p>One focused collection, selected to make choosing your next pair simple.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Luma Footwear. Made for everyday movement.</p>
+    </footer>
+</body>
 </html>

@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website - Contact Us</title>
-    </head>
-    <body>
-        <header>
-            <h1>Contact Us</h1>
-            <p>We would love to hear from you!</p>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luma Footwear | About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="Luma Footwear home">Luma<span>Footwear</span></a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a class="is-active" href="about.html" aria-current="page">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">View Products</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="about.html">About Us</a>
-        </nav>
+    <main class="page-main">
+        <section class="page-intro page-intro--narrow" aria-labelledby="about-title">
+            <p class="eyebrow">About Luma</p>
+            <h1 id="about-title">Good shoes make room for a good day.</h1>
+            <p>We created Luma around a simple idea: getting dressed should feel effortless, never ordinary.</p>
+        </section>
 
-        <main>
-            <section>
-                <h2>Get in Touch</h2>
-                <form action="#" method="POST">
-                    <div>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="message">Message:</label><br>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <br>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-        </main>
-    </body>
+        <section class="story-band">
+            <div class="story-band__image">
+                <img src="images/images.jpg" alt="A pair of polished leather oxford shoes">
+            </div>
+            <div class="story-band__content">
+                <h2>Less noise. Better essentials.</h2>
+                <p>Our collection starts with pieces people reach for again and again. We focus on dependable comfort, refined materials, and timeless silhouettes that work beyond one season.</p>
+                <p>Whether you are heading to the office or marking a special occasion, Luma is here to help every step feel considered.</p>
+                <a class="text-link" href="products.html">Explore the collection</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Luma Footwear. Made for everyday movement.</p>
+    </footer>
+</body>
 </html>
